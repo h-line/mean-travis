@@ -6,10 +6,15 @@ module.exports = function(grunt) {
       options: {
         separator: ';'
       },
-      dist: {
+      js: {
         src: ['tests/*.js'],
         dest: 'dist/<%= pkg.name %>.js'
+      },
+      css: {
+        src: ['*.css'],
+        dest: 'dist/<%= pkg.name %>.css'
       }
+
     },
     uglify: {
       options: {
@@ -19,6 +24,12 @@ module.exports = function(grunt) {
         files: {
           'dist/<%= pkg.name %>.min.js': ['<%= concat.dist.dest %>']
         }
+      }
+    },
+    cssmin: {
+      css:{
+        src: 'dist/<%= pkg.name %>.css',
+        dest: 'dist/<%= pkg.name %>.min.css'
       }
     },
     jshint: {
@@ -42,6 +53,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-concat');
 
   grunt.registerTask('test', ['jshint']);
