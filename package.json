@@ -4,7 +4,7 @@
   "description": "Testing MEAN Stack and Travis CI",
   "main": "index.js",
   "scripts": {
-    "test": "jasmine-node tests/first.spec.js",
+    "test": " ./node_modules/jasmine-node/bin/jasmine-node tests/first.spec.js",
     "start": "node ./bin/www"
   },
   "repository": {
