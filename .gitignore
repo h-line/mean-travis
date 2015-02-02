@@ -220,4 +220,6 @@ node_modules/
 
 #mongodb
 data/*
-!data/README.md
+!data/db
+data/db/*
+!data/db/README.md
