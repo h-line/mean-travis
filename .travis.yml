@@ -3,5 +3,6 @@ node_js:
    - "0.10"
 before_script:
    - npm install -g grunt-cli
+   - grunt
    - chmod +x ./node_modules/jasmine-node/bin/jasmine-node
    - node ./bin/www &  
