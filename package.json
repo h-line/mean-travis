@@ -33,6 +33,8 @@
     "grunt-contrib-jshint": "*",
     "grunt-contrib-watch": "*",
     "grunt-contrib-concat": "*",
-    "grunt-contrib-cssmin": "*"
+    "grunt-contrib-cssmin": "*",
+    "mongodb": "*",
+    "mongoose": "*"
   }
 }

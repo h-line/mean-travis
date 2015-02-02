@@ -217,3 +217,7 @@ pip-log.txt
 
 #npm modules
 node_modules/
+
+#mongodb
+data/*
+!data/README.md
