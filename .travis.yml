@@ -9,3 +9,5 @@ before_script:
    - node ./bin/www &  
 services:
   - mongodb
+notifications:
+  email: false
